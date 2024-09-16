@@ -205,17 +205,3 @@ void loop() {
 
   }
 }
-
-void setup() {
-  Serial.begin(115200);  // Initialize serial communication at 115200 baud
-}
-
-void loop() {
-  if (Serial.available() > 0) {  // Check if data is available to read
-    String receivedData = Serial.readStringUntil('\n');  // Read data until newline
-    Serial.print("Received: ");
-    Serial.println(receivedData);  // Echo the received data back
-  }
-  
-  delay(100);  // Small delay to avoid flooding the serial port
-}
