@@ -182,7 +182,7 @@ void loop() {
     readADC();
     digitalConvert();
 
-    float pos = getPosition(/* Arguments */);
+    pos = getPosition(/* Arguments */);
     
     // Define the PID errors
     e = ;
