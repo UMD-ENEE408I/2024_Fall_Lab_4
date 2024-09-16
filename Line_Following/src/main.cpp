@@ -13,7 +13,6 @@ int adc1_buf[8];
 int adc2_buf[8];
 
 uint8_t lineArray[13]; 
-float previousPosition = 6;
 
 // Encoders
 const unsigned int M1_ENC_A = 39;
